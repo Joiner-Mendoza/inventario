@@ -1,0 +1,139 @@
+:root{
+    --azul: #23468a;
+    --azul-letra: #58bdb7;
+    --gris:#c7c7c7;
+    --amarillo:#f6ff00;
+    --white: #ffffff;
+    --gray: #c7c7c7;
+    --Azul: #081b29;
+    --azul2: #112e42;
+    --Azul-claro: #00abf0;
+    --Very-light-pink:#C7C7C7;
+    --Text-input-field:#F7F7F7;
+    --Hospital-green:#ACD9B2;
+    --Dark:#232830;
+    --red:#ff0000;
+    --black-suave:#181a1b;
+}
+#valor-total{
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* ocultar las flechitas de los inputs tipi numericos */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.error-message{
+    color:  var(--red);
+    font-size: 16px;
+}
+.Form-Container{
+    
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    padding: 0 15px 15px 15px;
+    margin-top: 3.6%;
+    background-image: url(../assets/img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+.Title{
+    text-align: center;
+    margin: 20px 0;
+    color: var(--white);
+}
+.Form-div{
+    opacity: 0.9; 
+    border: 1px solid var(--white);
+    background-color: var(--Azul);
+    border-radius: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 80vh;
+    margin:  0 auto;
+    
+    
+}
+.Container_inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:  0 auto;
+    width: 80%;
+}
+.Container_inputs input{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    width: 100%;
+    border: 1px solid var(--gris);
+    padding: 12px;
+    border-radius: 8px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.Container_inputs textarea {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.Container_inputs label {
+    font-size: 20px;
+    padding: 12px 0 0 0;
+    color: var(--white);
+}
+.container_buttons-agregar{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.Agregar{
+    padding: 15px;
+    display: flex;
+    margin: 0 15px;
+    border-radius: 8px;
+    border: 2px solid var(--Azul);
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .5s;
+
+}
+
+.Agregar:hover{
+    cursor: pointer;
+    background-color: var(--Azul);
+    color: var(--white);
+    border: 2px solid var(--Azul-claro);
+    background:linear-gradient(207.8deg,#081b29 16.69%, #23468a 100%);
+
+    
+    
+}
+
+.Agregar:nth-child(2){
+    border: 2px solid var(--Azul);
+   }
+.Agregar:nth-child(2):hover{
+    border: 2px solid #ff0000;
+    background:linear-gradient(207.8deg,#081b29 16.69%, #f01800 100%);
+
+   }

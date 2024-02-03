@@ -1,0 +1,40 @@
+
+  
+  .No-datos {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-weight: bold;
+    height: 100vh;
+  }
+  .Container-home {
+    width: 100%;
+  }
+  .head-name-items{
+    background-color: var(--gray);
+    color: var(--black-suave);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 4.5%;
+    position: absolute;
+
+    background-color: var(--Azul);
+  }
+  
+  th, td {
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px solid #ddd;
+    color: var(--white);
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
