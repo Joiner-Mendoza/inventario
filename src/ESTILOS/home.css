@@ -1,40 +1,91 @@
 
-  
-  .No-datos {
-    display: flex;
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;
-    color: red;
-    font-weight: bold;
-    height: 100vh;
+
+.No-datos {
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-weight: bold;
+  height: 100vh;
+}
+.Container-home-table{
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+
   }
   .Container-home {
     width: 100%;
+
   }
   .head-name-items{
     background-color: var(--gray);
     color: var(--black-suave);
+  }
+  .table-Container{
+    width: 100%;
+    overflow: auto;
+    top: 20px;
   }
   table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 4.5%;
     position: absolute;
-
     background-color: var(--Azul);
+    position: relative;
   }
   
   th, td {
-    padding: 20px;
     text-align: left;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-bottom: 1px solid #ddd;
     color: var(--white);
+    padding: 10px;
   }
   
   th {
     background-color: #f2f2f2;
   }
   
+
+  /* tabla androip */
+
+  @media (max-width: 900px) {
+    .Container-home {
+      overflow-x: auto; 
+    }
+    .table-Container{
+      width: 100%;
+      white-space: nowrap;
+    }
+    .table-Container th,
+    .table-Container td{
+      padding: 8px;
+      font-size: 14px;
+    }
+    .table-Container th {
+      position: sticky;
+      top: 0;
+      background-color: #23468a;
+      color: #ffffff;
+      z-index: 1;
+    }
+    .table-Container{
+      top: 0;
+    }
+    .table-Contaoiner tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    table {
+      margin-top: 60px;
+    }
+    .Container-home{
+      overflow: auto;
+    }
+  }
+
+

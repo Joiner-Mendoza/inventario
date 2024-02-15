@@ -60,12 +60,15 @@ function Agregar({ actualizarDatos }) {
         .then(() => {
             alert("Producto ingresado correctamente.");                
             navigate('/Home');
+            window.location.reload();
             actualizarDatos(nuevoProducto);
         })
         
             .catch((error) => {
                 setError(`Error al agregar el producto, inténtelo de nuevo. Detalles: ${error.message}`);
                 console.error('Error en la solicitud', error);
+            // window.location.reload();
+
             });
 
     };

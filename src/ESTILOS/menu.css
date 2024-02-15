@@ -31,10 +31,12 @@ html {
     border-bottom: 2px solid var(--azul);
     padding: 15px;
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     background-color: var(--Azul);
+    transition: 2s;
   
 }
+
 .Container_nav-main input {
     display: flex;
     position: relative;
@@ -44,6 +46,7 @@ html {
     padding: 15px;
     border-radius: 8px;
     margin-left: 25%;
+    transition: 2s;
 
 }
 .Container_nav-main{
@@ -79,4 +82,28 @@ html {
     font-size: 18px;
     padding: 9px;
     
+}
+/* Menu androip */
+
+@media (max-width:900px){
+    .Container_nav-main input {
+        margin-left: 0; 
+        max-width: 110px;
+        overflow: auto;
+        margin: 0 auto;
+        height: auto;
+        font-size: 12px;
+    }
+    .Main{
+        padding: 0;
+    }
+    .Container_nav-main-ul li{
+        margin: 0 10px;
+        font-size: 12px;
+    }
+    .Container_nav-main {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
 }

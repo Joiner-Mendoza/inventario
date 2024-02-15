@@ -58,6 +58,7 @@ function Menu({ actualizarProductos }) {
         <ul className="Container_nav-main-ul">
           <li onClick={handleInventarioClick}>Inventario</li>
           <li onClick={handleProductClick}>Agregar Producto</li>
+          {/* <li onClick={handleProvedor}>Provedor</li> */}
         </ul>
         {location.pathname === '/Home' && ( // Renderizado condicional de la barra de búsqueda
           <input
@@ -67,6 +68,11 @@ function Menu({ actualizarProductos }) {
             onChange={handleChange}
           />
         )}
+      </nav>
+
+      <nav className="Container_Nav-Main-Androip">
+    
+
       </nav>
     </main>
   );

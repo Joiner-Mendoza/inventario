@@ -13,4 +13,11 @@ CREATE TABLE PRODUCTOS(
     
 );
 
+CREATE TABLE PROVEDOR (
+    ID_Provedor INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Nombre_Provedor,
+    Cantidad_Productos,
+    
+)
+
 SELECT * FROM PRODUCTOS;
