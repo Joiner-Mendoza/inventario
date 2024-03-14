@@ -10,7 +10,6 @@ CREATE TABLE PRODUCTOS(
     Descripcion TEXT,
     Valor_Unidad VARCHAR(255),
     Valor_Total VARCHAR(255)
-    
 );
 
 CREATE TABLE PROVEDOR (

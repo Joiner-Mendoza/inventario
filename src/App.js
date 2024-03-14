@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Menu } from './Menu.js';
-import { Home } from './Home.js';
 import { Agregar } from './Agregar.js';
 
 function App() {
